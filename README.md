@@ -1,0 +1,2 @@
+# KoGPT2ForPara
+TEMP
