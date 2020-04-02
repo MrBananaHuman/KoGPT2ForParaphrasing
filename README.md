@@ -6,6 +6,12 @@ GPT2 model: https://github.com/SKT-AI/KoGPT2
 
 Paraphrasing data: https://github.com/warnikchow/paraKQC, https://github.com/songys/Question_pair
 
+preprocessing:
+
+- make_sentence_pair.py
+
+- make_train_data.py
+
 Train script:
 
 - python3 train.py --dataset_path=data/train_data --init_model=model/pytorch_kogpt2_676e9bcfa7.params --n_epochs=1
