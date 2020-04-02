@@ -19,7 +19,7 @@ class MyTokenizer():
         self.added_tokens_encoder = {}
         self.unique_added_tokens_encoder = set()
         self.added_tokens_decoder = {}
-        self.unexpected_sep_token = ['<pad>', '<unk>', '<how>', '<what>', '<why>', '<where>', '<command>', '<normal>', '<when>', '<accept>']
+        self.unexpected_sep_token = ['<pad>', '<unk>']
         self.vocab_b_obj = vocab_b_obj = nlp.vocab.BERTVocab.from_sentencepiece(vocab_file_path,
                                                          mask_token=None,
                                                          sep_token=None,
