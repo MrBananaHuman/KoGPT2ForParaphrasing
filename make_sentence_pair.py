@@ -1,6 +1,8 @@
 from itertools import permutations
 
 data = open('paraKQC_v1.txt', 'r', encoding='utf-8')
+data2 = open('kor_pair_train.csv', 'r', encoding='utf-8')
+
 output = open('para_sentence_pair.txt', 'w', encoding='utf-8')
 
 lines = data.readlines()
@@ -20,5 +22,14 @@ for line in lines:
     if len(similar_sents) == 10:
         write_combi_pair(similar_sents)
         similar_sents = []
+        
+lines = data2.readlines()
+data2.close()
 
+for line in lines:
+    line = line.replace('\n', '') 
+    if line.split(',')[5] == '0':
+        output.write(line.split(',')[3] + '\t' + line.split(',')[4])
+        output.write('\n')
+        
 output.close()
