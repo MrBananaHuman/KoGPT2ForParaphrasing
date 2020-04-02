@@ -1,4 +1,6 @@
-# KoGPT2ForPara
+# KoGPT2ForParaphrasing
+
+Korean paraphrasing test using KoGPT2 model
 
 GPT2 model: https://github.com/SKT-AI/KoGPT2
 
